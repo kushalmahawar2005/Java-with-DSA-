@@ -20,7 +20,7 @@ public class compareConcept{
         else {
             System.out.println("Not Eqaul");
         }
-
+ 
         //So to check onlyy the value we use equals function
         if(s1.equals(s3)) {
             System.out.println("String are Equal");
