@@ -2,7 +2,7 @@
 public class Inheritance {
 
     public static void main(String args[]) {
-        Fish shark = new Fish();
+        Kushal shark = new Kushal();
         shark.eat();
     }
 }
@@ -29,5 +29,14 @@ class Fish extends Animal {
     int fins;
     void swim() {
         System.out.println("swims in water");
+    }
+}
+
+// Multilevel Inheritance 
+
+class Kushal extends Fish {
+    String name;
+    void name() {
+        System.out.print("Your Name is Kushal");
     }
 }
