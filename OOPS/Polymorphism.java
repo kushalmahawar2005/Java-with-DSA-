@@ -22,14 +22,13 @@ class Deer extends Animal {
     void eat() {
         System.out.print("Eat Grass");
     }
-} 
+}
  
 class Bhalu extends Animal {
     void eat() {
-        System.out.println("Win");
+        System.out.println("Win"); 
     }
 }
-
 
 
 
