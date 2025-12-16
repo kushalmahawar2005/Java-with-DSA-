@@ -27,11 +27,13 @@ class Tree{
     void preOrder(Node1 element){
         if(element == null){
             return;
-        }3
+        }
         System.out.println(element.val);
         preOrder(element.left);
         preOrder(element.right);
     }
+
+   
 }
 
 
@@ -44,19 +46,6 @@ public class Tree_Preorder {
         tree.preOrder(root);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
