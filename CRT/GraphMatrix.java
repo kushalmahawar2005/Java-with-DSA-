@@ -21,8 +21,26 @@ class GraphMatrix {
                 }
             }
         }
-        for (int i = 0; i < vertices; i++) {
+        for (int i = 0 ,j =0; i < vertices && j < vertices; i++, j++) {
             System.out.println(matrix[i][j]);
+        }
+    }
+
+    public void dfsearch(int matrix , int vertices) {
+        boolean[] visited = new boolean[this.vertices];
+        // Assuming DFS starts from node 0, or this method needs a starting node parameter.
+        // For now, let's start from node 0.
+        dfsRecursive(0, visited);
+    }
+
+    private void dfsRecursive(int currentNode, boolean[] visited) {
+        visited[currentNode] = true;
+        System.out.print(currentNode + " "); // Process the current node (e.g., print it)
+
+        for (int i = 0; i < vertices; i++) {
+            if (matrix[currentNode][i] == 1 && !visited[i]) {
+                dfsRecursive(i, visited);
+            }
         }
     }
 
@@ -33,6 +51,10 @@ class GraphMatrix {
             }
             System.out.println();
         }
+    }
+
+    public static void ArrayList() {
+        
     }
 
     public static void main(String args[]) {
