@@ -29,5 +29,14 @@ public class ArrayLists {
 
         // Contain Element 
         System.out.println(list.contains(1));
+
+        System.out.println(list.size());
+
+        //To Print the arraylist using the Loop 
+        for(int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+
+
     }
 }
