@@ -140,6 +140,25 @@ public class LinkedList {
         System.out.println("null");
     }
 
+
+    //Revrse a LinkedList
+
+    public void reverse() {
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+
+        while(curr !=null ) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
+
+
     // Main method
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
@@ -156,5 +175,7 @@ public class LinkedList {
         ll.remLast();
         ll.print();
         System.out.println(ll.search(3));
+        ll.reverse();
+        ll.print();
     }
 }
