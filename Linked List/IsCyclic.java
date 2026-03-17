@@ -10,6 +10,8 @@ class Node {
 
 public class IsCyclic {
 
+    //Detect Cycle in LL
+
     public static boolean isCyclic(Node head) {
         Node slow = head;
         Node fast = head;
@@ -25,6 +27,11 @@ public class IsCyclic {
         return false;
     }
 
+    //Remove cycle in LL
+
+    public static void RemoveLL(Node head) {
+        
+    }
     public static void main(String[] args) {
         Node head = new Node(1);
         head.next = new Node(2);

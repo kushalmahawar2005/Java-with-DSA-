@@ -34,5 +34,8 @@ public class arr {
             }
         }
 
+        int arr[] = new int[5];
+        
+
     }
 }
